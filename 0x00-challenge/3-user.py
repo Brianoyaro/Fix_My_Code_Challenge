@@ -44,7 +44,7 @@ class User():
             # self._password = hashlib.md5(pwd.encode()).hexdigest().lower()
             self.__password = y
 
-    def is_valid_password(self, pwd):
+    def is_valid_password(self, pwd=None):
         """
         Valid password:
         - `False` if `pwd` is `None`

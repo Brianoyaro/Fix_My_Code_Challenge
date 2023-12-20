@@ -30,7 +30,7 @@ class User():
         return self.__password
 
     @password.setter
-    def password(self, pwd):
+    def password(self, pwd=None):
         """
         Password setter:
         - `None` if `pwd` is `None`

@@ -12,6 +12,11 @@ def fizzbuzz(n):
       multiples of five print "Buzz".
     - For numbers which are multiples of both three and five print "FizzBuzz".
     """
+    for i in n:
+        if ord(i) not in range(48, 58):
+            return
+    n = int(n)
+
     if n < 1:
         return
 
@@ -35,5 +40,5 @@ if __name__ == '__main__':
         print("Example: ./0-fizzbuzz.py 89")
         sys.exit(1)
 
-    number = int(sys.argv[1])
+    number = sys.argv[1]
     fizzbuzz(number)

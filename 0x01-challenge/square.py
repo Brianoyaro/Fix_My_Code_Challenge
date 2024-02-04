@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """squre module"""
 
+
 class square():
     """square class"""
-    
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -23,6 +23,7 @@ class square():
     def __str__(self):
         """nice square representation"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""squre module"""
 
 class square():
+    """square class"""
     
     width = 0
     height = 0
@@ -15,9 +17,11 @@ class square():
         return self.width * self.width
 
     def PerimeterOfMySquare(self):
+        """perimeter of square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """nice square representation"""
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
